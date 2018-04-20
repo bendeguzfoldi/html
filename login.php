@@ -48,6 +48,36 @@ window.Modernizr=function(e,t,n){function r(e){d.cssText=e}function i(e,t){retur
 ",h="hidden"in e,m=e.childNodes.length==1||function(){t.createElement("a");var e=t.createDocumentFragment();return typeof e.cloneNode=="undefined"||typeof e.createDocumentFragment=="undefined"||typeof e.createElement=="undefined"}()}catch(n){h=!0,m=!0}})();var g={elements:f.elements||"abbr article aside audio bdi canvas data datalist details figcaption figure footer header hgroup mark meter nav output progress section summary time video",shivCSS:f.shivCSS!==!1,supportsUnknownElements:m,shivMethods:f.shivMethods!==!1,type:"default",shivDocument:a,createElement:s,createDocumentFragment:o};e.html5=g,a(t)}(this,t),f._version=a,c.className=c.className.replace(/(^|\s)no-js(\s|$)/,"$1$2")+(l?" js "+w.join(" "):""),f}(this,this.document);		</script>
 <style id="antiClickjack">
 body {display: none !important;}</style>
+<style>
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+ 
+.isa_info, .isa_success, .isa_warning, .isa_error {
+margin: 10px 0px;
+padding:12px;
+ 
+}
+.isa_info {
+    color: #00529B;
+    background-color: #BDE5F8;
+}
+.isa_success {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+}
+.isa_warning {
+    color: #9F6000;
+    background-color: #FEEFB3;
+}
+.isa_error {
+    color: #D8000C;
+    background-color: #FFD2D2;
+}
+.isa_info i, .isa_success i, .isa_warning i, .isa_error i {
+    margin:10px 22px;
+    font-size:2em;
+    vertical-align:middle;
+}
+</style>
 <script nonce="3f+N6j0RkCKyda7ASw5D8KjC6Rlyw/vhUNERvo6l/dP2iyIq">
 /* Special integration eligibility check */function isEligibleIntegration() {var sxf = "";return sxf === 'true' || window.name === 'PPFrameRedirect';}/* Don't bust the frame if this is top window */if (self === top || isEligibleIntegration()) {var antiClickjack = document.getElementById("antiClickjack");if (antiClickjack) {antiClickjack.parentNode.removeChild(antiClickjack);}} else {top.location = self.location;}</script>
 </head>
@@ -64,6 +94,10 @@ Note: Many features on the PayPal website require JavaScript and cookies.</p>
 <p class="paypal-logo paypal-logo-long">
 </p>
 </header>
+<div class="isa_error">
+   <i class="fa fa-times-circle"></i>
+This is a fake PayPal login page. Please do not use valid datas.
+</div>
 <h1 class="headerText accessAid">
 Log in to your PayPal account</h1>
 <div  class="notifications">
@@ -135,7 +169,7 @@ Having trouble logging in?</a>
 </div>
 </div>
 <div class="forgotLink">
-<a href="/authflow/password-recovery/?country.x=HU&amp;locale.x=en_US&amp;loginUrl=https%3A%2F%2Fwww.paypal.com%2Fsignin%253Fcountry.x%3DHU%26locale.x%3Den_HU" class="scTrack:unifiedlogin-click-forgot-password pwrLink">
+<a href="" class="scTrack:unifiedlogin-click-forgot-password pwrLink">
 Having trouble logging in?</a>
 </div>
 <div class="pwr-modal forgotPasswordModal" id="password-recovery-modal" aria-label="Password Recovery">
@@ -149,7 +183,7 @@ Having trouble logging in?</a>
 <span class="textInSeparator" aria-label="or">
 or</span>
 </div>
-<a href="/hu/webapps/mpp/account-selection" class="button secondary scTrack:unifiedlogin-click-signup-button" id="createAccount">
+<a href="" class="button secondary scTrack:unifiedlogin-click-signup-button" id="createAccount">
 Sign Up</a>
 </div>
 </div>
